@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+	<context id="MysqlTables" targetRuntime="MyBatis3">
+
+		<property name="javaFileEncoding" value="UTF-8" />
+		<property name="autoDelimitKeywords" value="true" />
+		<property name="beginningDelimiter" value="`" />
+		<property name="endingDelimiter" value="`" />
+
+<!--
+		<plugin type="org.mybatis.generator.plugins.RowBoundsPlugin" />
+-->
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+		<plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+
+		<commentGenerator>
+			<property name="suppressDate" value="true" />
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/pinyougoudb"
+			userId="root" password="root">
+			<property name="nullCatalogMeansCurrent" value="true" />
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator
+			targetPackage="com.pinyougou.pojo"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="com.pinyougou.mapper"
+			targetProject="src/main/resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.pinyougou.mapper"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+<!--
+		<table schema="" tableName="mail_project_sender" domainObjectName="MailSender" mapperName="MailSenderMapper"/>
+-->
+		<!-- 指定数据库表 -->
+		<table schema="" tableName="tb_address"></table>
+		<table schema="" tableName="tb_areas"></table>
+		<table schema="" tableName="tb_brand"></table>
+		<table schema="" tableName="tb_cities"></table>
+		<table schema="" tableName="tb_content"></table>
+		<table schema="" tableName="tb_content_category"></table>
+		<table schema="" tableName="tb_freight_template"></table>
+		<table schema="" tableName="tb_goods"></table>
+		<table schema="" tableName="tb_goods_desc"></table>
+		<table schema="" tableName="tb_item"></table>
+		<table schema="" tableName="tb_item_cat"></table>
+		<table schema="" tableName="tb_item_spec_option"></table>
+		<table schema="" tableName="tb_order"></table>
+		<table schema="" tableName="tb_order_item"></table>
+		<table schema="" tableName="tb_pay_log"></table>
+		<table schema="" tableName="tb_provinces"></table>
+		<table schema="" tableName="tb_seller"></table>
+		<table schema="" tableName="tb_specification"></table>
+		<table schema="" tableName="tb_specification_option"></table>
+		<table schema="" tableName="tb_type_template"></table>
+		<table schema="" tableName="tb_user"></table>
+
+	</context>
+</generatorConfiguration>

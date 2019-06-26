@@ -11,6 +11,7 @@ import entity.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassName BrandServiceImpl
@@ -28,6 +29,10 @@ public class BrandServiceImpl implements BrandService {
         return mapper.selectByExample(null);
     }
 
+    @Override
+    public List<Map> selectOptionList() {
+      return   mapper.selectOptionList();
+    }
 
 
     @Override

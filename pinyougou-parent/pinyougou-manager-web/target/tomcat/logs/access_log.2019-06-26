@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:10:18 +0800] "GET /admin/type_template.html HTTP/1.1" 304 - http-bio-9101-exec-1 36
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:10:21 +0800] "POST /typeTemplate/search.do?page=1&rows=10 HTTP/1.1" 200 1005 http-bio-9101-exec-2 2710
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:10:21 +0800] "POST /typeTemplate/search.do?page=1&rows=10 HTTP/1.1" 200 1005 http-bio-9101-exec-3 25
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:10:23 +0800] "GET /typeTemplate/findOne.do?id=35 HTTP/1.1" 200 541 http-bio-9101-exec-4 8
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "GET /admin/type_template.html HTTP/1.1" 200 8796 http-bio-9101-exec-6 8
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "GET /plugins/select2/select2-bootstrap.css HTTP/1.1" 200 15191 http-bio-9101-exec-7 0
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "GET /plugins/select2/select2.css HTTP/1.1" 200 17686 http-bio-9101-exec-8 0
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "GET /js/controller/typeTemplateController.js HTTP/1.1" 200 2858 http-bio-9101-exec-8 8
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "GET /plugins/select2/select2.min.js HTTP/1.1" 200 64569 http-bio-9101-exec-9 8
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "GET /js/angular-select2.js HTTP/1.1" 200 3269 http-bio-9101-exec-2 4
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "GET /js/service/brandService.js HTTP/1.1" 200 935 http-bio-9101-exec-1 4
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "GET /js/service/typeTemplateService.js HTTP/1.1" 200 878 http-bio-9101-exec-10 12
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "GET /brand/selectOptionList.do HTTP/1.1" 200 556 http-bio-9101-exec-10 20
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "POST /typeTemplate/search.do?page=1&rows=10 HTTP/1.1" 200 1005 http-bio-9101-exec-10 12
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:16 +0800] "POST /typeTemplate/search.do?page=1&rows=10 HTTP/1.1" 200 1005 http-bio-9101-exec-10 8
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:19 +0800] "GET /plugins/select2/select2-spinner.gif HTTP/1.1" 200 1849 http-bio-9101-exec-10 4
+0:0:0:0:0:0:0:1 - - [26/Jun/2019:17:12:20 +0800] "GET /plugins/select2/select2.png HTTP/1.1" 200 613 http-bio-9101-exec-10 0

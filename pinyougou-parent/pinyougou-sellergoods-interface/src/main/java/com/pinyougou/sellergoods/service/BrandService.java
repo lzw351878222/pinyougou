@@ -5,10 +5,13 @@ import entity.PageResult;
 
 
 import java.util.List;
+import java.util.Map;
 
 public interface BrandService {
 
     public List<TbBrand> findAll();
+
+    List<Map> selectOptionList();
 
 
     public PageResult   findPage(int pageNum,int pageSize);

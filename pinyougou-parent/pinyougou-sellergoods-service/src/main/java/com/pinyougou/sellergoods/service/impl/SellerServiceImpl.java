@@ -1,4 +1,5 @@
 package com.pinyougou.sellergoods.service.impl;
+import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
@@ -22,7 +23,19 @@ public class SellerServiceImpl implements SellerService {
 
 	@Autowired
 	private TbSellerMapper sellerMapper;
-	
+
+	@Override
+	public void updateStatus(String sellerId, String status) {
+
+		sellerMapper.updateTbSeller( sellerId,status);
+
+
+
+
+
+
+	}
+
 	/**
 	 * 查询全部
 	 */
@@ -46,6 +59,10 @@ public class SellerServiceImpl implements SellerService {
 	 */
 	@Override
 	public void add(TbSeller seller) {
+		seller.setStatus("0");
+		seller.setCreateTime(new Date());
+
+
 		sellerMapper.insert(seller);		
 	}
 
@@ -56,6 +73,9 @@ public class SellerServiceImpl implements SellerService {
 	@Override
 	public void update(TbSeller seller){
 		sellerMapper.updateByPrimaryKey(seller);
+
+
+
 	}	
 	
 	/**

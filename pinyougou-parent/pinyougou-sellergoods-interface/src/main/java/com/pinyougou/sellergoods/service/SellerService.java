@@ -14,6 +14,9 @@ public interface SellerService {
 	 * 返回全部列表
 	 * @return
 	 */
+
+	public void updateStatus(String sellerId,String status);
+
 	public List<TbSeller> findAll();
 	
 	

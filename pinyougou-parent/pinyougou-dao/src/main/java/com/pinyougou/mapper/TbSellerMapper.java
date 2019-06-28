@@ -27,4 +27,8 @@ public interface TbSellerMapper {
     int updateByPrimaryKeySelective(TbSeller record);
 
     int updateByPrimaryKey(TbSeller record);
+
+    int updateTbSeller( @Param("sellerId") String sellerId,@Param("status") String status);
+
+
 }
